@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgreen;
+        }
+        h1{
+            color:darkcyan ;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: x-large;
+            font-weight: bolder;
+            text-shadow: 2px 2px 2px lightskyblue;
+        }
+        p{
+            color: darkslateblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            font-size: large;
+            text-shadow:2px 1px 2px blue;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h1>DAYS OF THE WEEK</h1>
+    <hr>
+    <p id="para"></p>
+    <script>
+        var day;
+        switch (new Date().getDay())
+        {
+            case 0:
+                day="Sunday";
+                break;
+
+
+                case 1:
+                day="Monday";
+                break;
+
+
+                case 2:
+                day="Tuesday";
+                break;
+
+
+                case 3:
+                day="Wednesday";
+                break;
+
+
+                case 4:
+                day="Thursday";
+                break;
+
+
+                case 5:
+                day="Friday";
+                break;
+
+
+                case 6:
+                day="Saturday";
+                break;
+        }
+        document.getElementById("para").innerHTML="The day today is "+day;
+    </script>
+</center>
+</body>
+</html>
